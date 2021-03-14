@@ -1,1 +1,0 @@
-# right now this is just part 2 of exercise 4 but I'm working on getting everything in here. When I do, uhhhhhhhhhhhhh, tbh it's gonna be,, a lil messy and disorganized. Some things may be incomplete because I completed them on a different computer later 
