@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+body {
+	/*changing color of text, body, and aligning elements*/
+	background-color:  #5680E9;
+	color: white; 
+	margin: auto;
+	text-align: center;
+	font-family: 'Quicksand', sans-serif;
+}
+div {
+	/*changing height width and font-size of divs*/
+	margin: auto; 
+	font-size: 20px; 
+	height: 100px; 
+	width: 1000px; 
+}
+#submit {
+	width: 200px; 
+}
+p {
+	font-size: 30px; 
+}
+h1 {
+	font-size: 50px; 
+}
+input{
+  width: 30%;
+  padding: 12px 20px;
+  margin: 45px;
+  box-sizing: border-box;
+  border: 2px solid black;
+  border-radius: 4px;
+}

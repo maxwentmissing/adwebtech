@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+<meta charset = "UTF-8">
+<meta name = "viewport" content = "width=device-width, initial-scale=1">
+
+<link rel = "stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel = "stylesheet" href = "style.css">
+<link rel = "icon" href = "TRT.png" type = "image/png">
+
+<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script src = "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src = "https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src = "SideNavFunctions.js"></script>
+
+</head>
+<body>
+<center>
+<!-- Side Nav bar is located here, but could be anywhere in the code because of the way it is styled. -->
+<div id = "mySidebar" class = "sidebar">
+  <a href = "javascript:void(0)" class = "closebtn" onclick = "closeNav()"> × </a>
+  <a href = "#"> Home </a>
+  <a href = "#"> Teas </a>
+  <a href = "#"> Catering </a>
+  <a href = "#"> My Account </a>
+  <a href = "#"> Donate </a>
+</div>
+
+<!-- Everything has to be put inside of the div below if I don't want the contents of the page to be covered when the side
+nav is opened. -->
+<div id = "main">
+ 
+<nav class = "navbar navbar-light bg-light navbar-expand-sm">
+<a class = "navbar-brand" href="#"><button class = "openbtn btn" onclick = "openNav()"><img src = "TRT.png" alt = "TRT" width = '50px'></button></a>
+<span class = "navbar-text"> Tag's Rad Tea </span>
+	<ul class = "navbar-nav">
+		<li class = "nav-item">
+			<a class="nav-link" href="#"> History </a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="#"> Types of Tea </a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="#"> About Us</a>	
+		</li>
+	</ul>
+	<form class = "form-inline" action = "/action_page.php">
+		<input class = "form-control mr-sm-2" type = "text" placeholder = "Search">
+		<button class = "btn btn-success" type = "submit"> Search </button>
+	</form>
+</nav>
+
+<img src = "cup1.jpg" alt = "cup1" id = "cup1"/>
+
+<div>
+<h1>Founders' Favorites</h1>
+<!--BEGIN GRID FOUNDER FAVORITES-->
+<!--Randi-->
+<div class = "container-fluid">
+	<div class = "row">
+		<div class = "col-lg-3">
+			<div class="flip-card">
+				<div class="flip-card-inner">
+					<div class="flip-card-front">
+						<img src="randi.png" alt="randi" style="width:300px;height:300px;">
+					</div>
+					<div class="flip-card-back">
+						<h1>Randi Butternums</h1> 
+						<h3>The Hacker</h3>
+						<p>[REDACTED]</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class = "col-lg-3">
+			<div class="flip-card">
+				<div class="flip-card-inner">
+					<div class="flip-card-front">
+						<img src="https://www.davidstea.com/dw/image/v2/BBXZ_PRD/on/demandware.static/-/Sites-davidstea-master-catalog/default/dw7c8cdda9/productimages/10290DT01VAR004128-10290US01VAR0013148-BI-1.jpg?sw=450&sh=450&sm=fit" alt="dragonwell" style="width:300px;height:300px;">
+					</div>
+					<div class="flip-card-back">
+						<h1>Dragonwell</h1> 
+						<img src = "mediumcaf.png" alt = "medcaf"> 
+						<p>$7.99/oz</p>
+						<p>Randi makes sure to make a cup of this mellow, malty tea every day after his hard work of cubicle work.... for the devil.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class = "col-lg-3">
+			<div class="flip-card">
+				<div class="flip-card-inner">
+					<div class="flip-card-front">
+						<img src="https://www.davidstea.com/dw/image/v2/BBXZ_PRD/on/demandware.static/-/Sites-davidstea-master-catalog/default/dw7f60c6a2/productimages/10712DT01VAR0062207-10712US01VAR0048036-BI-1.jpg?sw=450&sh=450&sm=fit" alt="jasoolong" style="width:300px;height:300px;">
+					</div>
+					<div class="flip-card-back">
+						<h1>Jasmine Oolong</h1> 
+						<img src = "mediumcaf.png" alt = "medcaf"> 
+						<p>$7.99/oz</p>
+						<p>Randi drinks this tea while at work, utilizing its delicate, floral aroma to help him relax and keep calm during the incessant screaming of the damned.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class = "col-lg-3">
+			<div class="flip-card">
+				<div class="flip-card-inner">
+					<div class="flip-card-front">
+						<img src="https://www.davidstea.com/dw/image/v2/BBXZ_PRD/on/demandware.static/-/Sites-davidstea-master-catalog/default/dw6f160092/productimages/10441DT01VAR0021958-10441US01VAR0017451-BI-1.jpg?sw=450&sh=450&sm=fit" alt="cottoncandy" style="width:300px;height:300px;">
+					</div>
+					<div class="flip-card-back">
+						<h1>Cotton Candy</h1> 
+						<img src = "nocaf.png" alt = "nocaf"> 
+						<p>$4.49/oz</p>
+						<p>Randi drinks this tea during his breaks in an effort to relive the naivety from the lost childhood he struggles to remember</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--li lian-->
+	<div class = "row">
+		<div class = "col-lg-3">
+			<div class="flip-card">
+				<div class="flip-card-inner">
+					<div class="flip-card-front">
+						<img src="lilian.png" alt="lilian" style="width:300px;height:300px;">
+					</div>
+					<div class="flip-card-back">
+						<h1>丽莲</h1> 
+						<h3>The Aesthetician</h3>
+						<p>[REDACTED]</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class = "col-lg-3">
+			<div class="flip-card">
+				<div class="flip-card-inner">
+					<div class="flip-card-front">
+						<img src="https://www.davidstea.com/dw/image/v2/BBXZ_PRD/on/demandware.static/-/Sites-davidstea-master-catalog/default/dw330c8196/productimages/10397DT01VAR0016481-10397US01VAR0017117-BI-1.jpg?sw=450&sh=450&sm=fit" alt="vanillaorch" style="width:300px;height:300px;">
+					</div>
+					<div class="flip-card-back">
+						<h1>Vanilla Orchid</h1> 
+						<img src = "lowcaf.png" alt = "lowcaf"> 
+						<p>$7.49/oz</p>
+						<p>[desc]</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class = "col-lg-3">
+			<div class="flip-card">
+				<div class="flip-card-inner">
+					<div class="flip-card-front">
+						<img src="https://www.davidstea.com/dw/image/v2/BBXZ_PRD/on/demandware.static/-/Sites-davidstea-master-catalog/default/dwa54d4286/productimages/10521DT01VAR0028642-10521US01VAR0022318-BI-1.jpg?sw=450&sh=450&sm=fit" alt="cardamom" style="width:300px;height:300px;">
+					</div>
+					<div class="flip-card-back">
+						<h1>Cardamom French Toast</h1> 
+						<img src = "mediumcaf.png" alt = "medcaf"> 
+						<p>$4.49/oz</p>
+						<p>[desc]</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class = "col-lg-3">
+			<div class="flip-card">
+				<div class="flip-card-inner">
+					<div class="flip-card-front">
+						<img src="https://www.davidstea.com/dw/image/v2/BBXZ_PRD/on/demandware.static/-/Sites-davidstea-master-catalog/default/dwf7f858e2/productimages/10576DT01VAR0033497-10576US01VAR0025675-BI-1.jpg?sw=450&sh=450&sm=fit" alt="strawberrymatcha" style="width:300px;height:300px;">
+					</div>
+					<div class="flip-card-back">
+						<h1>Strawberry Matcha</h1> 
+						<img src = "mediumcaf.png" alt = "medcaf"> 
+						<p>$5.49/oz</p>
+						<p>[desc]</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class = "row">
+		<div class = "col-lg-3">
+			<div class="flip-card">
+				<div class="flip-card-inner">
+					<div class="flip-card-front">
+						<img src="tag.png" alt="tag" style="width:300px;height:300px;">
+					</div>
+					<div class="flip-card-back">
+						<h1>Tag</h1> 
+						<h3>The Magician</h3>
+						<p>[REDACTED]</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class = "col-lg-3">
+			<div class="flip-card">
+				<div class="flip-card-inner">
+					<div class="flip-card-front">
+						<img src="https://www.davidstea.com/dw/image/v2/BBXZ_PRD/on/demandware.static/-/Sites-davidstea-master-catalog/default/dw48382b7b/productimages/10659DT01VAR0056686-10659US01VAR0044326-BI-1.jpg?sw=450&sh=450&sm=fit" alt="stickyrice" style="width:300px;height:300px;">
+					</div>
+					<div class="flip-card-back">
+						<h1>Sticky Rice Oolong</h1> 
+						<img src = "lowcaf.png" alt = "lowcaf"> 
+						<p>$7.99/oz</p>
+						<p>Tag drinks this satisfying tea to clean her palette of the blood of her enemies</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class = "col-lg-3">
+			<div class="flip-card">
+				<div class="flip-card-inner">
+					<div class="flip-card-front">
+						<img src="https://www.davidstea.com/dw/image/v2/BBXZ_PRD/on/demandware.static/-/Sites-davidstea-master-catalog/default/dwd2cc4a19/productimages/10195DT01VAR004034-10195US01VAR0013054-BI-1.jpg?sw=450&sh=450&sm=fit" alt="gildedskies" style="width:300px;height:300px;">
+					</div>
+					<div class="flip-card-back">
+						<h1>Gilded Skies</h1> 
+						<img src = "highcaf.png" alt = "highcaf"> 
+						<p>$4.99/oz</p>
+						<p>Tag drinks this comforting brew to heighten her wizardrous abilities.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class = "col-lg-3">
+			<div class="flip-card">
+				<div class="flip-card-inner">
+					<div class="flip-card-front">
+						<img src="https://www.davidstea.com/dw/image/v2/BBXZ_PRD/on/demandware.static/-/Sites-davidstea-master-catalog/default/dw8a8db3ec/productimages/10017DT01VAR003928-10017US01VAR0012948-BI-1.jpg?sw=450&sh=450&sm=fit" alt="kenyan" style="width:300px;height:300px;">
+					</div>
+					<div class="flip-card-back">
+						<h1>Kenyan Tinderet</h1> 
+						<img src = "highcaf.png" alt = "highcaf"> 
+						<p>$4.99/oz</p>
+						<p>Tag drinks this bold tea after mixing it with the blood of her enemies to create the perfect, malty sacrificial beverage.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--END FOUNDER FAVS-->
+<br><br>
+<div>
+<h1>Black Teas</h1>
+<!--BEGIN GRID BLACK TEAS-->
+<div class = "container-fluid">
+	<!--ROW ONE-->
+	<div class = "row">
+		<div class = "col-lg-3">
+			<div class="flip-card">
+				<div class="flip-card-inner">
+					<div class="flip-card-front">
+						<img src="https://www.davidstea.com/dw/image/v2/BBXZ_PRD/on/demandware.static/-/Sites-davidstea-master-catalog/default/dwa54d4286/productimages/10521DT01VAR0028642-10521US01VAR0022318-BI-1.jpg?sw=450&sh=450&sm=fit" alt="cardamom" style="width:300px;height:300px;">
+					</div>
+					<div class="flip-card-back">
+						<h1>Cardamom French Toast</h1> 
+						<img src = "mediumcaf.png" alt = "medcaf"> 
+						<p>$4.49/oz</p>
+						<p>A sweet, buttery, spiced blend perfect for a comforting brunch</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class = "col-lg-3">
+			<div class="flip-card">
+				<div class="flip-card-inner">
+					<div class="flip-card-front">
+						<img src="https://www.davidstea.com/dw/image/v2/BBXZ_PRD/on/demandware.static/-/Sites-davidstea-master-catalog/default/dwea23dd66/productimages/10530DT01VAR0029490-10530US01VAR0022775-BI-1.jpg?sw=450&sh=450&sm=fit" alt="darkhoney" style="width:300px;height:300px;">
+					</div>
+					<div class="flip-card-back">
+						<h1>Dark Honey</h1> 
+						<img src = "highcaf.png" alt = "highcaf"> 
+						<p>$8.49/oz</p>
+						<p>Luxurious golden flavor with the distinguished lingering sweetness of honey;</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class = "col-lg-3">
+			<div class="flip-card">
+				<div class="flip-card-inner">
+					<div class="flip-card-front">
+						<img src="https://www.davidstea.com/dw/image/v2/BBXZ_PRD/on/demandware.static/-/Sites-davidstea-master-catalog/default/dw838de575/productimages/10076DT01VAR003961-10076US01VAR0012981-BI-1.jpg?sw=450&sh=450&sm=fit" alt="earlgray" style="width:300px;height:300px;">
+					</div>
+					<div class="flip-card-back">
+						<h1>Cream of Earl Gray</h1> 
+						<img src = "highcaf.png" alt = "highcaf"> 
+						<p>$8.49/oz</p>
+						<p>The familiar bursts of citrus but now with touches of vanilla for a creamy finish.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class = "col-lg-3">
+			<div class="flip-card">
+				<div class="flip-card-inner">
+					<div class="flip-card-front">
+						<img src="https://www.davidstea.com/dw/image/v2/BBXZ_PRD/on/demandware.static/-/Sites-davidstea-master-catalog/default/dwd2cc4a19/productimages/10195DT01VAR004034-10195US01VAR0013054-BI-1.jpg?sw=450&sh=450&sm=fit" alt="gildedskies" style="width:300px;height:300px;">
+					</div>
+					<div class="flip-card-back">
+						<h1>Gilded Skies</h1> 
+						<img src = "highcaf.png" alt = "highcaf"> 
+						<p>$4.99/oz</p>
+						<p>Warm cinnamon, aromatic clove, comforting, creamy vanilla with sugar stars for added sweetness. Ideal for lattes.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--ROW TWO-->
+	<div class = "row">
+		<div class = "col-lg-3">
+			<div class="flip-card">
+				<div class="flip-card-inner">
+					<div class="flip-card-front">
+						<img src="https://www.davidstea.com/dw/image/v2/BBXZ_PRD/on/demandware.static/-/Sites-davidstea-master-catalog/default/dw8a8db3ec/productimages/10017DT01VAR003928-10017US01VAR0012948-BI-1.jpg?sw=450&sh=450&sm=fit" alt="kenyan" style="width:300px;height:300px;">
+					</div>
+					<div class="flip-card-back">
+						<h1>Kenyan Tinderet</h1> 
+						<img src = "highcaf.png" alt = "highcaf"> 
+						<p>$4.99/oz</p>
+						<p>Bold, strong, malty, earthy, with touches of honey sweetness.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class = "col-lg-3">
+			<div class="flip-card">
+				<div class="flip-card-inner">
+					<div class="flip-card-front">
+						<img src="https://www.davidstea.com/dw/image/v2/BBXZ_PRD/on/demandware.static/-/Sites-davidstea-master-catalog/default/dwf344c99e/productimages/10248DT01VAR004087-10248US01VAR0013107-BI-1.jpg?sw=450&sh=450&sm=fit" alt="chilichai" style="width:300px;height:300px;">
+					</div>
+					<div class="flip-card-back">
+						<h1>Red Hot</h1> 
+						<img src = "highcaf.png" alt = "highcaf"> 
+						<p>$4.99/oz</p>
+						<p>Sweet and fudgy with Alepo chilies and Sichuan peppercorns for a feisty finishing kick.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class = "col-lg-3">
+			<div class="flip-card">
+				<div class="flip-card-inner">
+					<div class="flip-card-front">
+						<img src="https://www.davidstea.com/dw/image/v2/BBXZ_PRD/on/demandware.static/-/Sites-davidstea-master-catalog/default/dw2ec26abc/productimages/10146DT01VAR003991-10146US01VAR0013011-BI-1.jpg?sw=450&sh=450&sm=fit" alt="kiss" style="width:300px;height:300px;">
+					</div>
+					<div class="flip-card-back">
+						<h1>Hit or Miss</h1> 
+						<img src = "mediumcaf.png" alt = "medcaf"> 
+						<p>$4.99/oz</p>
+						<p>Red sugar lips add a touch of guilty sweetness to this decadent, spiced chocolate tea.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class = "col-lg-3">
+			<div class="flip-card">
+				<div class="flip-card-inner">
+					<div class="flip-card-front">
+						<img src="https://www.davidstea.com/dw/image/v2/BBXZ_PRD/on/demandware.static/-/Sites-davidstea-master-catalog/default/dwc7d28f90/productimages/10359DT01VAR0015658-10359US01VAR0017237-BI-1.jpg?sw=450&sh=450&sm=fit" alt="blueberry" style="width:300px;height:300px;">
+					</div>
+					<div class="flip-card-back">
+						<h1>Blueberry Jam</h1> 
+						<img src = "mediumcaf.png" alt = "medcaf"> 
+						<p>$5.49/oz</p>
+						<p>Jam out with this juicy, dark, and sweet tea. Goes absolutely perfect with your morning toast.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+
+<div>
+<h1>White Teas</h1>
+<!--BEGIN GRID WHITE TEAS-->
+  <div class = "container-fluid">
+	<!--ROW ONE-->
+	<div class = "row">
+		<div class = "col-lg-3">
+			<div class="flip-card">
+				<div class="flip-card-inner">
+					<div class="flip-card-front">
+						<img src="https://www.davidstea.com/dw/image/v2/BBXZ_PRD/on/demandware.static/-/Sites-davidstea-master-catalog/default/dwf3851dde/productimages/10348DT01VAR0015204-10348US01VAR0017249-BI-1.jpg?sw=450&sh=450&sm=fit" alt="pearl" style="width:300px;height:300px;">
+					</div>
+					<div class="flip-card-back">
+						<h1>Pearl Blend</h1> 
+						<img src = "mediumcaf.png" alt = "medcaf"> 
+						<p>$6.49/oz</p>
+						<p>Green and white teas for refreshing delicacy. Sweet, floral pearls of Jasmine. Luscious aromas from Hibiscus buds</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class = "col-lg-3">
+			<div class="flip-card">
+				<div class="flip-card-inner">
+					<div class="flip-card-front">
+						<img src="https://www.davidstea.com/dw/image/v2/BBXZ_PRD/on/demandware.static/-/Sites-davidstea-master-catalog/default/dwbfb18139/productimages/10212DT01VAR004051-10212US01VAR0013071-BI-1.jpg?sw=450&sh=450&sm=fit" alt="cherryblossom" style="width:300px;height:300px;">
+					</div>
+					<div class="flip-card-back">
+						<h1>Cherry Blossom</h1> 
+						<img src = "lowcaf.png" alt = "lowcaf"> 
+						<p>$6.49/oz</p>
+						<p>Juicy cherries, charming rose petals, and creamy coconut make a romantic, even aphrodisiac blend.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class = "col-lg-3">
+			<div class="flip-card">
+				<div class="flip-card-inner">
+					<div class="flip-card-front">
+						<img src="https://www.davidstea.com/dw/image/v2/BBXZ_PRD/on/demandware.static/-/Sites-davidstea-master-catalog/default/dw444bca8b/productimages/10668DT01VAR0057739-10668US01VAR0045001-BI-1.jpg?sw=450&sh=450&sm=fit" alt="seaberry" style="width:300px;height:300px;">
+					</div>
+					<div class="flip-card-back">
+						<h1>Seaberry Spa</h1> 
+						<img src = "lowcaf.png" alt = "lowcaf"> 
+						<p>$5.99/oz</p>
+						<p>Relaxing lemon palm, memory-supportive rosemary, skin-saving sea buckthorn, and gently tart raspberry leaf, with fresh apple and wildflower aromas. Soothing aromatherapy and spa trip in a cup.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class = "col-lg-3">
+			<div class="flip-card">
+				<div class="flip-card-inner">
+					<div class="flip-card-front">
+						<img src="https://www.davidstea.com/dw/image/v2/BBXZ_PRD/on/demandware.static/-/Sites-davidstea-master-catalog/default/dw0ed67c86/productimages/10663DT01VAR0057440-10663US01VAR0044736-BI-1.jpg?sw=450&sh=450&sm=fit" alt="malawi" style="width:300px;height:300px;">
+					</div>
+					<div class="flip-card-back">
+						<h1>Pearl Blend</h1> 
+						<img src = "lowcaf.png" alt = "lowcaf"> 
+						<p>$10.98/oz</p>
+						<p>Steeps a stunning sunshine yellow. Has a light buttery flavor, with vegetal and citrus notes, and a light artichoke aroma.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+</div>
+
+<div>
+<h1>Oolong Teas</h1>
+<!--BEGIN GRID OOLONG TEAS-->
+	<div class = "container-fluid">
+		<!--ROW ONE-->
+		<div class = "row">
+			<div class = "col-lg-3">
+				<div class="flip-card">
+					<div class="flip-card-inner">
+						<div class="flip-card-front">
+							<img src="https://www.davidstea.com/dw/image/v2/BBXZ_PRD/on/demandware.static/-/Sites-davidstea-master-catalog/default/dw7f60c6a2/productimages/10712DT01VAR0062207-10712US01VAR0048036-BI-1.jpg?sw=450&sh=450&sm=fit" alt="jasmineoolong" style="width:300px;height:300px;">
+						</div>
+						<div class="flip-card-back">
+							<h1>Jasmine Oolong</h1> 
+							<img src = "mediumcaf.png" alt = "medcaf"> 
+							<p>$7.99/oz</p>
+							<p>Delicate and floral with light earthy tones.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class = "col-lg-3">
+				<div class="flip-card">
+					<div class="flip-card-inner">
+						<div class="flip-card-front">
+							<img src="https://www.davidstea.com/dw/image/v2/BBXZ_PRD/on/demandware.static/-/Sites-davidstea-master-catalog/default/dw1911a353/productimages/10041DT01VAR003940-10041US01VAR0012960-BI-1.jpg?sw=450&sh=450&sm=fit" alt="guangzhou" style="width:300px;height:300px;">
+						</div>
+						<div class="flip-card-back">
+							<h1>Guang Zhou Milk</h1> 
+							<img src = "mediumcaf.png" alt = "medcaf"> 
+							<p>$7.49/oz</p>
+							<p>Velvety smooth, and creamy, with tempting hints of orchid.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class = "col-lg-3">
+				<div class="flip-card">
+					<div class="flip-card-inner">
+						<div class="flip-card-front">
+							<img src="https://www.davidstea.com/dw/image/v2/BBXZ_PRD/on/demandware.static/-/Sites-davidstea-master-catalog/default/dw330c8196/productimages/10397DT01VAR0016481-10397US01VAR0017117-BI-1.jpg?sw=450&sh=450&sm=fit" alt="vanillaorchid" style="width:300px;height:300px;">
+						</div>
+						<div class="flip-card-back">
+							<h1>Vanilla Orchid</h1> 
+							<img src = "lowcaf.png" alt = "lowcaf"> 
+							<p>$7.49/oz</p>
+							<p>Lightly sweet, and creamy. Delicate and floral with orchid aromas.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class = "col-lg-3">
+				<div class="flip-card">
+					<div class="flip-card-inner">
+						<div class="flip-card-front">
+							<img src="https://www.davidstea.com/dw/image/v2/BBXZ_PRD/on/demandware.static/-/Sites-davidstea-master-catalog/default/dw365c9243/productimages/10713DT01VAR0062263-10713US01VAR0048088-BI-1.jpg?sw=450&sh=450&sm=fit" alt="phoenixorchid" style="width:300px;height:300px;">
+						</div>
+						<div class="flip-card-back">
+							<h1>Phoenix Orchid</h1> 
+							<img src = "lowcaf.png" alt = "lowcaf"> 
+							<p>$12.99/oz</p>
+							<p>Strong notes of lychee and plum, with pleasant hints of toasted caramel.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!--ROW TWO-->
+		<div class = "row">
+			<div class = "col-lg-4">
+				<div class="flip-card">
+					<div class="flip-card-inner">
+						<div class="flip-card-front">
+							<img src="https://www.davidstea.com/dw/image/v2/BBXZ_PRD/on/demandware.static/-/Sites-davidstea-master-catalog/default/dw48382b7b/productimages/10659DT01VAR0056686-10659US01VAR0044326-BI-1.jpg?sw=450&sh=450&sm=fit" alt="stickyrice" style="width:300px;height:300px;">
+						</div>
+						<div class="flip-card-back">
+							<h1>Sticky Rice</h1> 
+							<img src = "lowcaf.png" alt = "lowcaf"> 
+							<p>$7.99/oz</p>
+							<p>Sweet and creamy with satisfying sticky rice taste</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class = "col-lg-4">
+				<div class="flip-card">
+					<div class="flip-card-inner">
+						<div class="flip-card-front">
+							<img src="https://www.davidstea.com/dw/image/v2/BBXZ_PRD/on/demandware.static/-/Sites-davidstea-master-catalog/default/dw1554ba66/productimages/10156DT01VAR004000-10156US01VAR0013020-BI-1.jpg?sw=450&sh=450&sm=fit" alt="tiekwanyin" style="width:300px;height:300px;">
+						</div>
+						<div class="flip-card-back">
+							<h1>Tie Kwan Yin</h1> 
+							<img src = "highcaf.png" alt = "highcaf"> 
+							<p>$7.99/oz</p>
+							<p>A crisp and nutty tea supposedly gifted to a farmer by the goddess of Mercy.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class = "col-lg-4">
+				<div class="flip-card">
+					<div class="flip-card-inner">
+						<div class="flip-card-front">
+							<img src="https://www.davidstea.com/dw/image/v2/BBXZ_PRD/on/demandware.static/-/Sites-davidstea-master-catalog/default/dw881c444a/productimages/10551DT01VAR0031776-10551US01VAR0024455-BI-1.jpg?sw=450&sh=450&sm=fit" alt="coconutcream" style="width:300px;height:300px;">
+						</div>
+						<div class="flip-card-back">
+							<h1>Coconut Cream Pie</h1> 
+							<img src = "mediumcaf.png" alt = "medcaf"> 
+							<p>$5.99/oz</p>
+							<p>Delectable, rich coconut flavors. Velvety, sweet, and creamy.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div>
+<h1>Green Teas + Matcha</h1>
+<!--BEGIN GRID GREEN TEAS-->
+	<div class = "container-fluid">
+		<!--ROW ONE-->
+		<div class = "row">
+			<div class = "col-lg-3">
+				<div class="flip-card">
+					<div class="flip-card-inner">
+						<div class="flip-card-front">
+							<img src="https://www.davidstea.com/dw/image/v2/BBXZ_PRD/on/demandware.static/-/Sites-davidstea-master-catalog/default/dwb17d5d8a/productimages/10046DT01VAR003943-10046US01VAR0012963-BI-1.jpg?sw=450&sh=450&sm=fit" alt="silkdragon" style="width:300px;height:300px;">
+						</div>
+						<div class="flip-card-back">
+							<h1>Silk Dragon Jasmine</h1> 
+							<img src = "mediumcaf.png" alt = "medcaf"> 
+							<p>$7.49/oz</p>
+							<p>Night blooming jasmine is plucked in the morning and kept cool until night, when the flowers burst open to release their aromas onto the green tea leaves. This process is repeated over the course of five days, guaranteeing a magical jasmine flavor that you’re sure to treasure.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class = "col-lg-3">
+				<div class="flip-card">
+					<div class="flip-card-inner">
+						<div class="flip-card-front">
+							<img src="https://www.davidstea.com/dw/image/v2/BBXZ_PRD/on/demandware.static/-/Sites-davidstea-master-catalog/default/dwea60cbec/productimages/10555DT01VAR0031929-10555US01VAR0024573-BI-1.jpg?sw=450&sh=450&sm=fit" alt="puravida" style="width:300px;height:300px;">
+						</div>
+						<div class="flip-card-back">
+							<h1>Pura Vida</h1> 
+							<img src = "lowcaf.png" alt = "lowcaf"> 
+							<p>$4.49/oz</p>
+							<p>Refreshing pineapple and and a touch of relaxing chamomile to quench a topical, summery thirst.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class = "col-lg-3">
+				<div class="flip-card">
+					<div class="flip-card-inner">
+						<div class="flip-card-front">
+							<img src="https://www.davidstea.com/dw/image/v2/BBXZ_PRD/on/demandware.static/-/Sites-davidstea-master-catalog/default/dwf5131614/productimages/10519DT01VAR0028590-10519US01VAR0022272-BI-1.jpg?sw=450&sh=450&sm=fit" alt="sweetalmond" style="width:300px;height:300px;">
+						</div>
+						<div class="flip-card-back">
+							<h1>Sweet Almond</h1> 
+							<img src = "mediumcaf.png" alt = "medcaf"> 
+							<p>$4.49/oz</p>
+							<p>Nutty kiss of almond and bright marigold and cornflower petals create a sweet, subtle, and festive blend.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class = "col-lg-3">
+				<div class="flip-card">
+					<div class="flip-card-inner">
+						<div class="flip-card-front">
+							<img src="https://www.davidstea.com/dw/image/v2/BBXZ_PRD/on/demandware.static/-/Sites-davidstea-master-catalog/default/dw7c8cdda9/productimages/10290DT01VAR004128-10290US01VAR0013148-BI-1.jpg?sw=450&sh=450&sm=fit" alt="dragonwell" style="width:300px;height:300px;">
+						</div>
+						<div class="flip-card-back">
+							<h1>Dragonwell</h1> 
+							<img src = "mediumcaf.png" alt = "medcaf"> 
+							<p>$7.99/oz</p>
+							<p>Toasty with hints of chestnut make a mellow, slightly malty tea good for savouring after a hard day.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!--ROW TWO-->
+		<div class = "row">
+			<div class = "col-lg-3">
+				<div class="flip-card">
+					<div class="flip-card-inner">
+						<div class="flip-card-front">
+							<img src="https://www.davidstea.com/dw/image/v2/BBXZ_PRD/on/demandware.static/-/Sites-davidstea-master-catalog/default/dwe03a0d9e/productimages/10023DT01VAR003933-10023US01VAR0012953-BI-1.jpg?sw=450&sh=450&sm=fit" alt="butterflyjas" style="width:300px;height:300px;">
+						</div>
+						<div class="flip-card-back">
+							<h1>Butterfly Jasmine</h1> 
+							<img src = "lowcaf.png" alt = "lowcaf"> 
+							<p>$12.49/oz</p>
+							<p>Delicate jasmine petals and green tea leaves unfurl into butterflies as they steep. Delicately floral, with a seductive aroma.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class = "col-lg-3">
+				<div class="flip-card">
+					<div class="flip-card-inner">
+						<div class="flip-card-front">
+							<img src="https://www.davidstea.com/dw/image/v2/BBXZ_PRD/on/demandware.static/-/Sites-davidstea-master-catalog/default/dw0ce92b0c/productimages/10640DT01VAR0042553-10640US01VAR0042645-BI-1.jpg?sw=450&sh=450&sm=fit" alt="buttersencha" style="width:300px;height:300px;">
+						</div>
+						<div class="flip-card-back">
+							<h1>Butter Sencha</h1> 
+							<img src = "mediumcaf.png" alt = "medcaf"> 
+							<p>$6.99/oz</p>
+							<p>Mouthwateringly bold and crisp, with rich, caramelized butter notes that highlight its umami flavor.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class = "col-lg-3">
+				<div class="flip-card">
+					<div class="flip-card-inner">
+						<div class="flip-card-front">
+							<img src="https://www.davidstea.com/dw/image/v2/BBXZ_PRD/on/demandware.static/-/Sites-davidstea-master-catalog/default/dwf7f858e2/productimages/10576DT01VAR0033497-10576US01VAR0025675-BI-1.jpg?sw=450&sh=450&sm=fit" alt="strawberrymatcha" style="width:300px;height:300px;">
+						</div>
+						<div class="flip-card-back">
+							<h1>Strawberry Matcha</h1> 
+							<img src = "mediumcaf.png" alt = "medcaf"> 
+							<p>$5.49/oz</p>
+							<p>A sweet and fruity matcha with energizing and fun candy-like flavor.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class = "col-lg-3">
+				<div class="flip-card">
+					<div class="flip-card-inner">
+						<div class="flip-card-front">
+							<img src="https://www.davidstea.com/dw/image/v2/BBXZ_PRD/on/demandware.static/-/Sites-davidstea-master-catalog/default/dwc5b9fbf3/productimages/10532DT01VAR0029691-10532US01VAR0022876-BI-1.jpg?sw=450&sh=450&sm=fit" alt="peachmatcha" style="width:300px;height:300px;">
+						</div>
+						<div class="flip-card-back">
+							<h1>Peach Matcha</h1> 
+							<img src = "mediumcaf.png" alt = "medcaf"> 
+							<p>$5.49/oz</p>
+							<p>A juicy and sweet perfect iced or added to smoothies.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div>
+<h1>Rooibos Teas</h1>
+<!--BEGIN GRID OOLONG TEAS-->
+	<div class = "container-fluid">
+		<!--ROW ONE-->
+		<div class = "row">
+			<div class = "col-lg-6">
+				<div class="flip-card">
+					<div class="flip-card-inner">
+						<div class="flip-card-front">
+							<img src="https://www.davidstea.com/dw/image/v2/BBXZ_PRD/on/demandware.static/-/Sites-davidstea-master-catalog/default/dwb59c3508/productimages/10753DT01VAR0072350-10753US01VAR0055395-BI-1.jpg?sw=450&sh=450&sm=fit" alt="lavenderbuttercream" style="width:300px;height:300px;">
+						</div>
+						<div class="flip-card-back">
+							<h1>Lavender Buttercream</h1> 
+							<img src = "nocaf.png" alt = "nocaf"> 
+							<p>$4.99/oz</p>
+							<p>Sweet and creamy like buttercream icing, and laced with aromatic lavender. Ideal for iced, frothy lattes.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class = "col-lg-6">
+				<div class="flip-card">
+					<div class="flip-card-inner">
+						<div class="flip-card-front">
+							<img src="https://www.davidstea.com/dw/image/v2/BBXZ_PRD/on/demandware.static/-/Sites-davidstea-master-catalog/default/dw6f160092/productimages/10441DT01VAR0021958-10441US01VAR0017451-BI-1.jpg?sw=450&sh=450&sm=fit" alt="cottoncandy" style="width:300px;height:300px;">
+						</div>
+						<div class="flip-card-back">
+							<h1>Cotton Candy</h1> 
+							<img src = "nocaf.png" alt = "nocaf"> 
+							<p>$4.49/oz</p>
+							<p>Sweet rooibos, candied mango, and sugary sprinkles for a fun flavor.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+</div>
+  </div>
+ </div>
+</body>
+</html> 

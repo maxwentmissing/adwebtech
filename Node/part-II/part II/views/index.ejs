@@ -1,0 +1,62 @@
+<html>
+	<head>
+		<title> ToDo App </title>
+		<link href="https://fonts.googleapis.com/css?family=Lato:100"     rel="stylesheet">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		
+		
+		<link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+		
+		<link href="style.css" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+		
+		<style>
+		.butt{
+			color:pink;
+		}
+		.body
+		</style>
+
+	</head>
+	<body>
+	<div class="container">
+		<div class="jumbotron">
+			<h1>Displaying Content from a JSON File</h1>
+		</div>
+		
+		
+		<form action="/fileWrite" class="text-center"method="get">
+			<input type="button" class = "butt" value="Read File" id="button" >
+			<input type="submit" class = "butt" value="Write File" id="button2" >
+			<input type="submit" class = "butt" formaction="/fileUpdate" value="Update File" id="button3" >
+		</form>
+	</div>
+	<div class="container whiteboard" id="response">
+	<script type="text/javascript">
+	//reads file and displays info in the response div
+    $(document).ready(function() {
+        $('#button').click(function() {
+			$('#response').html("<h4>Category Name: <%=videoData.categoryName%></h4><%videoData.categories.forEach(function(item){%><ul><li>Category ID: <%=item.categoryID%><ul><li>Category Name: <%=item.categoryName%><ul><li>Category Description: <%=item.categoryDescription%><ul><li>Video Count: <%=item.videosCount%></li></ul></li></ul></li></ul></li></ul><%})%>");
+        });
+    });
+	//AJAX writing and appending not as reliable as going to the page and redirecting
+	/*$(document).ready(function() {
+        $('#button2').click(function() {
+            
+            $.get('/fileWrite');
+        });
+    });
+	$(document).ready(function() {
+        $('#button3').click(function() {
+            
+            $.get('/fileUpdate');
+        });
+    });*/
+    </script>
+	
+	</div>
+	</body>
+</html>

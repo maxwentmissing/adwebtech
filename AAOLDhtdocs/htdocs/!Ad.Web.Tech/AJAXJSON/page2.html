@@ -1,0 +1,44 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+<audio autoplay = "true" src = "https://www.youtube.com/embed/w_RMMzohBDQ">
+<style>
+audio {
+	display:none;
+}
+</style>
+</head>
+
+
+<body>
+	<?php
+		$str = file_get_contents('posts.json');
+		$json = json_decode($str, true);
+		echo '<pre>' . print_r($json, true) . '</pre>';
+		foreach ($json['result']['post'] as $key => $value)
+		{
+			echo '
+			<div class = "container">
+				<div class = "row"><!--TOP BOI-->
+					<div class = "col-lg-6"><!--LEFT TOP-->
+						<p>test top left</p>
+					</div>
+					<div class = "col-lg-6"><!--RIGHT TOP-->
+						<p>test top right</p>
+					</div>
+				</div>
+				<div class = "row"><!--BOTTOM BOI-->
+					<div class = "col-lg-6"><!--LEFT BOTTOM-->
+						<p>test bottom left</p>
+					</div>
+					<div class = "col-lg-6"><!--RIGHT BOTTOM-->
+						<p>test bottom right</p>
+					</div>
+				</div>
+			</div>'
+		}
+}
+	?>
+</body>
+</html>

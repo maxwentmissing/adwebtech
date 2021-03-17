@@ -1,0 +1,32 @@
+{
+   "$schema": "http://localhost/GIVE_'EM/Schema%20for%20data.json",
+   "title": "Books",
+   "description": "coding books in library",
+   "type": "object",
+	
+   "properties": {
+	
+      "id": {
+         "description": "The unique identifier for a product",
+         "type": "integer"
+      },
+		
+      "language": {
+         "description": "coding language in book",
+         "type": "string"
+      },
+		
+      "edition": {
+         "description": "edition of book",
+         "type": "string"
+      },
+	  
+	  "author": {
+         "description": "author of book",
+         "type": "string"
+      }
+		
+   },
+	
+   "required": ["id", "language", "edition", "author"]
+}

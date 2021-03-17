@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+<link rel = "stylesheet" href="CSS.css">
+<script>
+$( function() {
+		$( "#accordion" ).accordion();
+	} );
+
+</script>
+<style>
+
+</style>
+</head>
+
+<body>
+	<div class = "sec1">
+		<h2>British Hairways</h2>
+
+		<div class="tab">
+		  <button class="tablinks" onclick="openCity(event, 'Home')">Home</button>
+		  <button class="tablinks" onclick="openCity(event, 'Page1')">Page1</button>
+		  <button class="tablinks" onclick="openCity(event, 'Page2')">Page2</button>
+		  <button class="tablinks" onclick="openCity(event, 'Page3')">Page3</button>
+		</div>
+
+		<div id="Home" class="tabcontent">
+		  <h3>Home</h3>
+		  <p>This is the home page of the company. It will have a mission statement
+		  and the company's background information.</p>
+		</div>
+
+		<div id="Page1" class="tabcontent">
+		  <h3>Page1</h3>
+		  <p></p> 
+		</div>
+
+		<div id="Page2" class="tabcontent">
+		  <h3>Page2</h3>
+		  <p></p>
+		</div>
+		
+		<div id="Page3" class="tabcontent">
+		  <h3>Page3</h3>
+		  <p></p>
+		</div>
+
+		<script>
+			function openCity(evt, cityName) {
+			  var i, tabcontent, tablinks;
+			  tabcontent = document.getElementsByClassName("tabcontent");
+			  for (i = 0; i < tabcontent.length; i++) {
+				tabcontent[i].style.display = "none";
+			  }
+			  tablinks = document.getElementsByClassName("tablinks");
+			  for (i = 0; i < tablinks.length; i++) {
+				tablinks[i].className = tablinks[i].className.replace(" active", "");
+			  }
+			  document.getElementById(cityName).style.display = "block";
+			  evt.currentTarget.className += " active";
+			}
+		</script>
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="/resources/demos/style.css">
+  
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	</div><!--END SEC 1-->
+	<div class = "sec2">
+	<div id="accordion">
+	  <h3>British Hairways</h3>
+	  <div>
+	  <center>
+		<img src ="hairsalon.jpg" class = "rounded-circle" height="200">
+	  </center>
+	  </div>
+	  <h3>Services we Offer</h3>
+	  <div>
+		<div class="row">
+		<div class = "col-4">
+			<img src ="hairsalon.jpg"height="200">
+		</div>
+		<div class="col-4">
+			<img src ="hairsalon.jpg"height="200">
+		</div>
+		<div class="col-4">
+			<img src ="hairsalon.jpg"height="200">
+		</div>
+		</div>
+	  </div>
+	  <h3>Contact Information</h3>
+	  <div>
+		<p>Words words words</p>
+	  </div>
+	</div>
+
+	</div><!--END SEC 2-->
+   
+</body>
+</html> 

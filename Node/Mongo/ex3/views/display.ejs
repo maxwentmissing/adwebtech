@@ -1,0 +1,28 @@
+<html>
+<head>
+<style>
+body{
+background-color: #f9c5d8;
+color:#ef3e7f;
+}
+</style>
+</head>
+
+<body>
+<center>
+<h1>Reading Data from a JSON File and Populating the Database</h1>
+<div>
+	<% results.forEach(function(doc){ %>
+	<div>
+	<h3><%=doc.color%></h3>
+	<ul>
+		<li>Category: <%=doc.category%></li>
+		<li>Type: <%=doc.type%></li>
+		<li>RGB: <%=doc.code.rgba.toString()%></li>
+		<li>Hex: <%=doc.code.hex%></li>
+	</ul>
+	<%})%>
+	</div>
+</div>
+</body>
+</html>

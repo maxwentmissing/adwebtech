@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+		<link href="JS/jquery-ui-1.12.1.custom/jquery-ui.css" rel="stylesheet">
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+		<script src="JS/jquery-ui-1.12.1.custom/external/jquery/jquery.js"></script>
+		<script src="JS/jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+		<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+		
+	</head>
+	<style>
+		.chartContainer{
+			height: 300px; width: 300px; margin: auto;
+		}
+		h5{
+			text-align: center;
+			margin-top: 200px;
+		}
+	</style>
+	<body>
+		<h5>SELECT * FROM users INNER JOIN userRatings ON users.name=userRatings.name;</h5>
+		<div class="chartContainer" >
+			<canvas id="myChart" ></canvas>
+		</div>
+		<div id="display1" class="container">
+		</div>
+		<h5>SELECT age, COUNT(*) FROM users GROUP BY age;</h5>
+		<div class="chartContainer">
+			
+			<canvas id="myChart2" ></canvas>
+		</div>
+		<div id="display2" class="container">
+		</div>
+		<h5>SELECT rating, COUNT(*) FROM userRatings GROUP BY rating;</h5>
+		<div class="chartContainer">
+			
+			<canvas id="myChart3" ></canvas>
+		</div>
+		<div id="display3" class="container">
+		</div>
+		<h5>SELECT * FROM users INNER JOIN userRatings ON users.name=userRatings.name WHERE users.name LIKE 'j%';</h5>
+		<div class="chartContainer">
+			
+			<canvas id="myChart4" ></canvas>
+		</div>
+		<div id="display4" class="container">
+		</div>
+		<h5>SELECT * FROM users INNER JOIN userRatings ON users.name=userRatings.name WHERE users.name LIKE 'j___';</h5>
+		<div class="chartContainer">
+			
+			<canvas id="myChart5" ></canvas>
+		</div>
+		<div id="display5" class="container">
+		</div>
+		<script type="text/javascript" charset="utf8" src="JS/functions.js"></script>
+	</body>
+</html>

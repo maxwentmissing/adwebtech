@@ -1,0 +1,16 @@
+/*General styling for the page*/
+body{
+	font-family:Merienda ;
+	text-align: center;
+	background-color: #ABA6BF ;
+}
+/*Color scheme for jumbotron title at the top of the page*/
+.jumbotron{
+	background-color: #595775;
+	color: white;
+}
+
+/*sizes the text input for the user's name*/
+.form-control{
+	max-width: 30%;
+}

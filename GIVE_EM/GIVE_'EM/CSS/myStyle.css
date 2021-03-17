@@ -1,0 +1,30 @@
+table,th,tr,td{
+	padding: 5px;
+	border: solid darkblue 2px;
+	border-collapse: collapse;
+	background-color: blue;
+	color:gold;
+	font-size: 15pt;
+}
+
+table,button,.central{margin:auto; }
+.btn, .btn-primary{font-size: 20pt; margin-top: 100px}
+div{text-align:center}
+body  {
+  /*background-image: url("../background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;*/
+  background-color: tan;
+  background-size: 100%;
+  position: relative; 
+}
+.dataFiles{
+	background-color: lightblue;
+	color: white;
+	padding: 10px;
+	border-radius: 25px;
+	font-size: 20pt;
+}
+#section1 {padding-top:50px; padding-bottom:50px;height:auto;  margin-top: 80px; margin-bottom: 300px; max-width: 100%}
+#section2 {padding-top:50px; padding-bottom:50px;height:auto; margin-top: 80px; margin-bottom: 300px; max-width: 100%}
+#section3 {padding-top:50px; padding-bottom:50px;height:auto; margin-top: 80px; margin-bottom: 300px; max-width: 100%}

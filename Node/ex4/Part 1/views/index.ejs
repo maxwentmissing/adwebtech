@@ -1,0 +1,33 @@
+<html>
+<head>
+	<title> Ex 4 </title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet">
+	<link href="/styles.css" rel="stylesheet">
+</head>
+
+<body>
+<h1><%= videoData.categoryName %></h1>
+<ul>
+<% videoData.categories.forEach(function(item){ %>
+<li>Category ID: <%= item.categoryID %>
+	<ul>
+	<li>Category Name: <%= item.categoryName %>
+		<ul>
+		<li>Description: <%= item.categoryDescription %>
+			<ul>
+			<li>Video Count: <%= item.videosCount %>
+			</ul>
+			</li>
+		</ul>
+		</li>
+	</ul>
+	</li>
+</li>
+<% }); %>
+</ul>
+</body>
+</html>
+	

@@ -1,0 +1,63 @@
+html {
+	height:100%;
+	width:100%;
+	margin:0px;
+	cursor: url("cursor1.gif"), auto;
+	font-family: "Times New Roman", Times, serif;
+	cursor: url("cursor1.gif"), auto;
+}
+
+body {
+	width:100%;
+	margin:0px;
+	min-height:100%;
+	text-align: center;
+	background-image: url("transparent.jpg");
+	background-size:cover;
+	background-attachment: fixed;
+	cursor: url("cursor1.gif"), auto;
+	font-family: "Times New Roman", Times, serif;
+}
+
+.body{
+	height:700px;
+	background-image: url("bg1.png");
+	background-size: 100%;
+	background: cover;
+	background-repeat: no-repeat;
+	background-position: center top;
+	font-family: "Times New Roman", Times, serif;
+	cursor: url("cursor1.gif"), auto;
+}
+
+.nextbody{
+	height: 700px;
+	background-image: url("randomgif6.gif");
+	background-size: 50%;
+	background: cover;
+	background-repeat: no-repeat;
+	background-position: center top;
+	font-family: "Times New Roman", Times, serif;
+	cursor: url("cursor1.gif"), auto;
+}
+
+.alert{
+	position:absolute;
+	top: 435px;
+    left: 20px;
+    right: 20px;
+	font-family: "Times New Roman", Times, serif;
+	cursor: url("cursor1.gif"), auto;
+}
+
+button{
+	background-color: Transparent;
+	overflow: hidden;
+	border: none;
+	outline: none;
+	cursor: url("cursor1.gif"), auto;
+}
+
+p{
+	font-family: "Times New Roman", Times, serif;
+}

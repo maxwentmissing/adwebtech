@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+   <head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+		<link href="JS/jquery-ui.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+		<script src="JS/external/jquery/jquery.js"></script>
+		<script src="JS/jquery-ui.js"></script>
+		<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+		
+		
+		<title>Example</title>
+		<link rel="stylesheet" type="text/css" href="CSS/myStyle.css">
+		
+   </head>
+	
+   
+		<!--scroll.py-->
+	<body data-spy="scroll" data-target=".navbar" data-offset="160">
+
+		<!--nav bar fixed at top of the page-->
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>                        
+					</button>
+					<a class="navbar-brand" href="#">Learn jQuery</a>
+				</div>
+				<div>
+					<div class="collapse navbar-collapse" id="myNavbar">
+						<ul class="nav navbar-nav">
+							<li><a href="#section1">1</a></li>
+							<li><a href="#section2">2</a></li>
+							<li><a href="#section3">3</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</nav> 
+		
+				
+		<div class="container" id="section1">
+			<div class = "central">
+				<button type = "button" class="btn btn-primary" onclick = "loadJSON()">Update by loading JSON File</button>
+			</div>
+			<br>
+			<div id="jsonExample">
+			</div>
+		</div>
+	
+		<div class="container" id="section2">
+			<div class = "central">
+				<button type = "button" class="btn btn-primary" onclick = "loadPHPJSON()">Update by loading JSON in PHP File </button>
+			</div>
+			<br>
+			<div id="PHPJSONExample">
+			</div>
+		</div>	
+	
+		<div class="container" id="section3">
+			<div class = "central">
+				<button type = "button" class="btn btn-primary" onclick = "loadServerData()">Update using PHP and MySQLi</button>
+			</div>
+			<br>
+			<div id="serverDataExample">
+			</div>
+		</div>
+				
+			
+		<script src="JS/main.js"></script>
+    </body>	
+</html>

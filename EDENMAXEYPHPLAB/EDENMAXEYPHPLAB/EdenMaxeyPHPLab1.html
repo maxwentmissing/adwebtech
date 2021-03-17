@@ -1,0 +1,68 @@
+<!--Eden Maxey-->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+	background-color:pink;
+	color:white;
+}
+.item{
+	float: left;
+	overflow: auto;
+	margin-left:35%;
+}
+.quantity{
+	float: left;
+
+	overflow: auto;
+
+}
+
+h1{
+	text-align: center;
+}
+</style>
+</head>
+
+<body>
+<h1>Welcome to Bob's Auto parts!</h1>
+<center>
+
+	<div class= "item">
+	Item
+	<br>
+	Tires: 
+	<br>
+	Oil: 
+	<br>
+	Spark plugs: 
+	<br><br>
+	How did you<br>find Bob's?
+	<br>
+	</div>
+	
+	<div class= "quantity">
+	Quantity
+	<br>
+	<form action="EdenMaxeyPHPLab2.php" method="post">
+	<input type = "number" name = "tires"> $75.56
+	<br>
+	<input type = "number" name = "oil"> $25.89
+	<br>
+	<input type = "number" name = "sparks"> $49.99
+	<br><br>
+	<select name = "how">
+		<option value = "I am a regular customer">I am a regular customer</option>
+		<option value = "TV advertising">TV advertising</option>
+		<option value = "Phone directory">Phone directory</option>
+		<option value = "Word of mouth">Word of mouth</option>
+	</select>
+	<br>
+	<input type="submit" value="Submit"> <input type = "reset" value = "Reset">
+	</form>
+	<br>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,299 @@
+html {
+	height:100%;
+	width:100%;
+	margin:0px;
+	cursor: url("cursor1.gif"), auto;
+	font-family: "Times New Roman", Times, serif;
+}
+
+/*.search{
+	background-image: url("headerbg.gif");
+	float:right;
+	margin-top: 0px;
+}*/
+
+.header {
+	background-image: url("headerbg.gif");
+	background-attachment: fixed;
+	height:280px;
+	margin-top:0px;
+	font-family: "Times New Roman", Times, serif;
+}
+
+audio {
+	display:none;
+}
+
+.glyphicon{
+	color:white;
+}
+
+.navbar{
+	height: 10px;
+	font-family: "Times New Roman", Times, serif;
+	margin: 0;
+    padding: 0;
+}
+
+.navbar-inverse {
+	color:white;
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: linear-gradient(to bottom right, #1df7ae, #ff2bf0);
+	cursor: url("cursor1.gif"), auto;
+	font-family: "Times New Roman", Times, serif;
+	border-color: Transparent;
+}
+
+.navbar-nav li a{
+	color:white;
+	cursor: url("cursor1.gif"), auto;
+	font-family: "Times New Roman", Times, serif;
+}
+
+.nav.navbar-nav li a{
+	color: white;
+	font-family: "Times New Roman", Times, serif;
+}
+
+.nav.navbar-nav.navbar-right li a {
+	color: white;
+	font-family: "Times New Roman", Times, serif;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /*background: linear-gradient(to bottom right, #1df7ae, #ff2bf0);*/
+	cursor: url("cursor1.gif"), auto;
+	font-family: "Times New Roman", Times, serif;
+}
+
+li {
+    float: left;
+	width: 100px;
+	cursor: url("cursor1.gif"), auto;
+	font-family: "Times New Roman", Times, serif;
+}
+
+li a, .dropdown-toggle {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+	cursor: url("cursor1.gif"), auto;
+	font-family: "Times New Roman", Times, serif;
+}
+
+li a:hover,.dropdown:hover .dropdown-toggle {
+    background-image: url("waves.gif");
+	background-size: 200px 48px;
+	background-position: -15px -1px;
+	background-repeat: no-repeat;
+	cursor: url("cursor1.gif"), auto;
+	font-family: "Times New Roman", Times, serif;
+}
+
+li.dropdown {
+    display: inline-block;
+	cursor: url("cursor1.gif"), auto;
+	font-family: "Times New Roman", Times, serif;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #f7d2f6;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	cursor: url("cursor1.gif"), auto;
+	font-family: "Times New Roman", Times, serif;
+}
+
+.dropdown-menu a {
+    color: #63bbff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+	cursor: url("cursor1.gif"), auto;
+	font-family: "Times New Roman", Times, serif;
+}
+
+.dropdown-menu a:hover {
+	background-color: #f7d2f6;
+	cursor: url("cursor1.gif"), auto;
+	font-family: "Times New Roman", Times, serif;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+	cursor: url("cursor1.gif"), auto;
+	font-family: "Times New Roman", Times, serif;
+}
+
+.active{
+	color:white;
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /*background: linear-gradient(to bottom right, #1df7ae, #ff2bf0);*/
+	cursor: url("cursor1.gif"), auto;
+	font-family: "Times New Roman", Times, serif;
+}
+
+.body{
+	height:700px;
+	background-image: url("bg1.png");
+	background-size: 100%;
+	background: cover;
+	background-repeat: no-repeat;
+	background-position: center top;
+	font-family: "Times New Roman", Times, serif;
+}
+
+.coolaf{
+	background-image:url("p5.jpg");
+	background-position: center;
+	height:400px;
+	width:160px;
+	background-size:200px 400px;
+}
+
+.ord{
+	background-image:url("ord.jpg");
+	background-position: center;
+	height:400px;
+	background-size:400px 400px;
+	background-repeat: no-repeat;
+}
+
+.s{
+	margin-left:-25px;
+}
+
+.dongzhang{
+	background-image:url('dongzhang.jpg');
+	background-size:600px;
+	width:600px;
+	height:400px;
+	background-position:center;
+	background-repeat:no-repeat;
+}
+
+.darkord{
+	background-image:url('darkord.jpg');
+	background-size:300px;
+	width:300px;
+	height:450px;
+	background-position:center;
+	background-repeat:no-repeat;
+}
+
+.fcamp{
+	background-image:url('camp.jpg');
+	background-size:600px;
+	width:600px;
+	height:600px;
+	background-position:center;
+	background-repeat:no-repeat;
+}
+
+.fminicamp{
+	background-image:url('campmini.jpg');
+	background-size:600px;
+	width:600px;
+	height:600px;
+	background-position:center;
+	background-repeat:no-repeat;
+}
+
+body {
+	width:100%;
+	margin:0px;
+	min-height:100%;
+	text-align: center;
+	background-image: url("transparent.jpg");
+	background-size:cover;
+	background-attachment: fixed;
+	cursor: url("cursor1.gif"), auto;
+	font-family: "Times New Roman", Times, serif;
+}
+
+p{
+	font-family: "Times New Roman", Times, serif;
+	margin: 0;
+    padding: 0;
+}
+
+#sung{
+	position:absolute;
+	margin-left:-70px;
+	margin-top:-1500px;
+}
+
+#sungord{
+	position:absolute;
+	margin-top: -1500px;
+	margin-left: -100px;
+	transform: rotate(-10deg);
+}
+
+#sunzhang{
+	position:absolute;
+	margin-top: -1500px;
+	margin-left: -141px;
+	transform: rotate(8deg);
+}
+#sundong{
+	position: absolute;
+	margin-left:145px;
+	margin-top:-1500px;
+	transform:rotate(4deg);
+}
+#fezdarkord{
+	position:absolute;
+	margin-left:-50px;
+	margin-top:-1500px;
+	transform:rotate(6deg);
+}
+
+#hatshecamp{
+	position:absolute;
+	margin-left:-350px;
+	margin-top:-2280;
+}
+#starshecamp{
+	position:absolute;
+	margin-left:-300px;
+	margin-top:-2040px;
+	
+}
+
+#beard{
+	position:absolute;
+	margin-left:-80px;
+	margin-top:-2350px;
+}
+#sarhat{
+	position:absolute;
+	margin-left:-20px;
+	margin-top:-2200px;
+}
+#suncamp{
+	position:absolute;
+	margin-top:-2060px;
+	margin-left:-45px;
+	transform:rotate(-5deg);
+}
+#threed{
+	position:absolute;
+	margin-top:-2750px;
+	margin-left:-250px;
+}

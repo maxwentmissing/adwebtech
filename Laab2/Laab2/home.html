@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<!--feature utilized:
+		bootstrap
+			Jumbotron
+			form-group
+			input-group-prepend
+			btn btn-success
+		jquery
+			dataTables plug-in
+	-->
+    <head>
+		<!--links for transferability between devices-->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!--links for bootstrap and jquery styling-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+		<link href="JS/jquery-ui.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+		<link href='https://fonts.googleapis.com/css?family=Merienda' rel='stylesheet'> 
+		
+		<!--links for personal css styling-->
+		<link rel="stylesheet" type="text/css" href="style.css">
+		
+		<!--links for javascript-->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+		<script src="JS/external/jquery/jquery.js"></script>
+		<script src="JS/jquery-ui.js"></script>
+		<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+		
+		<!--title for webpage-->
+		<title>Lab2</title>
+		
+		
+    </head>
+	
+   
+	
+	<body>
+		<!--title/description of page-->
+		<div class="container">
+			<div class="jumbotron">
+				<h1>Welcome to Lab2!</h1>
+				<h5>Retrieving data from a .json file and displaying the data in a table using datatable plugin</h5>
+			</div>
+		</div>
+		<!--input for user's name-->
+		<div class="input-group mb-3 container ">
+
+			<div class="input-group-prepend ">
+				<span class="input-group-text">Name</span>
+			</div>
+			<input type="text" id="userInput" class="form-control">
+			<input type="button" id="submit" value="get JSON data" onclick="attemptTableDisplay()" class="btn btn-success">
+				
+		</div>
+		
+		<!--container for messages and dataTable-->
+		<div class="container" id="section1">
+			
+		</div>
+	
+		
+				
+		<script>
+		//generates datatable from movies.json if the userInput text input was filled out
+		function attemptTableDisplay(){
+			if($("#userInput").val().trim() != ""){
+				$.ajax({url: "movies.json", 
+					dateType: 'json',
+					success: function(movie){
+						
+						//table for movie info
+						var table = "<table id='table2' class='display' style='width:100%'><thead><tr><th>title</th><th>rank</th></tr></thead><tbody>";
+						
+						//using object's keys and array's indexes to get the information we want from the json file
+						for(var i = 0; i < movie.length; i++){
+							table += "<tr><td>"+movie[i].title+"</td><td>"+movie[i].rank+"</td></tr>";
+						}
+						
+						table += "</tbody></table>";
+						
+						//sets the html of section1 to the message and datatable
+						$("#section1").html("<h1>Welcome "+ $("#userInput").val().trim() +"! Here are the movies' titles and ranks retrieved using JSON data</h1>"+table);
+						
+						//gives dataTable styling and functions
+						$('#table2').DataTable();
+					},
+					error: function(){
+						//alerts that there was an error
+						alert("Error fetching Movies");
+						
+					}
+				});
+			}
+			else{
+				//displays that the user did not enter there name
+				$("#section1").html("<h1>You did not enter your name. Please reload the page and enter your name before you load the JSON.</h1>");
+			}
+		}
+		</script>
+    </body>	
+</html>

@@ -1,0 +1,101 @@
+html {
+	height:100%;
+	width:100%;
+	margin:0px;
+	cursor: url("cursor1.gif"), auto;
+}
+.header {
+	background-image: url("headerbg.gif");
+	background-size: 50%;
+	background-attachment: fixed;
+	height:280px;
+}
+
+.nav{
+	
+}
+
+.body{
+	height:700px;
+	background-image: url("bg1.png");
+	background-size: 100%;
+	background: cover;
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+
+body {
+	width:100%;
+	margin:0px;
+	min-height:100%;
+	text-align: center;
+	background-image: url("transparent.jpg");
+	background-size:cover;
+	background-attachment: fixed;
+	cursor: url("cursor1.gif"), auto;
+}
+
+audio {
+	display:none;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: linear-gradient(to bottom right, #1df7ae, #ff2bf0);
+	cursor: url("cursor1.gif"), auto;
+}
+
+li {
+    float: left;
+    cursor: url("cursor1.gif"), auto;
+
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+	cursor: url("cursor1.gif"), auto;
+}
+
+li a:hover,.dropdown:hover .dropbtn {
+    background-image: url("waves.gif");
+	cursor: url("cursor1.gif"), auto;
+}
+
+li.dropdown {
+    display: inline-block;
+	cursor: url("cursor1.gif"), auto;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f7d2f6;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	cursor: url("cursor1.gif"), auto;
+}
+
+.dropdown-content a {
+    color: #63bbff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+	cursor: url("cursor1.gif"), auto;
+}
+
+.dropdown-content a:hover {
+	background-color: #f7d2f6
+	cursor: url("cursor1.gif"), auto;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+	cursor: url("cursor1.gif"), auto;
+}

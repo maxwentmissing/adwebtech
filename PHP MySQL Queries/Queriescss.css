@@ -1,0 +1,17 @@
+html {
+	height:100%;
+	width:100%;
+	margin:0px;
+	/*cursor: url("cursor1.gif"), auto;*/
+	font-family: "Times New Roman", Times, serif;
+}
+
+audio {
+	display:none;
+}
+
+body{
+	background-color:#e8b9f7;
+	color:grey;
+	font-family: "Times New Roman", Times, serif;
+}

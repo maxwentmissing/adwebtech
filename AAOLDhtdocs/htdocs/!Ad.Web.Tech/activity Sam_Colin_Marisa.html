@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title> AJAX Exercise</title>
+  </head>
+
+  <body>
+    <h1 id="out"> </h1>
+
+    <p>The goal of this exercise is to download data from a remote source using AJAX and then upload this page.</p>
+
+    <p>jQuery is already loaded on this page. You should use it.</p>
+
+    <p>The first group to finish this wins a very special prize!</p>
+
+    <ol>
+      <li>Write you solution in the <code>script</code> tags at the bottom of this file</li>
+      <li>Open <a href="http://horizons-json-cors.s3-website-us-east-1.amazonaws.com/data.json">http://horizons-json-cors.s3-website-us-east-1.amazonaws.com/data.json</a> to check out what our data looks like.</li>
+      <li>Load this data on this page using <code>$.ajax()</code>.</li>
+      <li>Find out which city is the largest by population.</li>
+      <li>Using $.ajax, display the name of the city in the h1 tag at the top, it has the id <code>"out"</code>.</li>
+      <li>Rewrite the array (just include the first two objects) with the arrow in the JSON file in a XML format.</li>
+      <li>Lastly, answer the following questions on your webpage or in the comments of your code: What is AJAX? What does it mean to be asynchronous? List 2 pros and 2 cons of AJAX. How do you write an AJAX function?</li>
+    </ol>
+    <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+
+    <p id="#pre"></p>
+    <script>
+    // YOUR CODE HERE
+	$.ajax({
+		url: "thng.json",
+		success: function(resp){
+			/*this will sort through the data for you and display where you want it. you are also welcome to t*/
+			  var max = 0;
+			  var holder = 0;
+
+			  for (var i = 0; i < resp.length;i++){
+				if (resp[i]["Population"] > max){
+				  max = resp[i]["Population"];
+				  holder = i;
+				}
+			  }
+			  var number = (resp[holder]["Population"]);
+			  var city = (resp[holder]["City / Urban area"]);
+			  $("#out").text(city + " has the largest population of " + number);
+	  }
+	  });
+/**/
+
+
+
+
+
+    </script>
+  </body>
+</html>
